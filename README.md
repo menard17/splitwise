@@ -1,10 +1,13 @@
-HOW TO RUN?
+## HOW TO RUN?
+
+```python 
 python manage.py migrate
 python manage.py runserver
+```
 
-API Contracts:
+## API Contracts:
 
-1. Add User:
+## 1. Add User:
 Endpoint: POST /users/create/
 Request:
 json
@@ -14,7 +17,7 @@ json
     "mobile": 122565
 }
 
-2. Add Expense (Percentage):
+## 2. Add Expense (Percentage):
 Endpoint: POST api/expense/
 Request:
 json
@@ -37,7 +40,7 @@ json
   "status": "success",
   "message": "Expense added successfully"
 }
-4. Show Balances:
+## 4. Show Balances:
 Endpoint: GET /api/get_user_balances/<user_id>
 Response:
 json
@@ -58,7 +61,7 @@ json
         }
     }
 }
-6. Show Passbook:
+## 5. Show Passbook:
 Endpoint: GET /api/get_user_passbook/<user_id>
 Response:
 json
